@@ -1720,12 +1720,12 @@ body::after {
 }
 .options_yoga .option_yoga {
   position: relative;
-  border-radius: 20px;
   background-color: #e6be80;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   transition: all 0.3s ease 0s;
+  border-radius: 20px;
 }
 .options_yoga .option_yoga .option_yoga_img {
   position: absolute;
@@ -1937,6 +1937,7 @@ body::after {
     display: flex;
     transition: all 0.3s ease 0s;
     height: 100%;
+    opacity: 1;
   }
 }
 .schedule_block {
