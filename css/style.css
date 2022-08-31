@@ -3431,13 +3431,21 @@ input[type=submit] {
   display: block;
 }
 
-input[type=submit]:hover {
-  height: 100%;
-  background-color: #182949;
-  color: white;
-  transition: all 0.3s ease 0s;
+@media (min-width: 767.98px) {
+  input[type=submit]:hover {
+    height: 100%;
+    background-color: #182949;
+    color: white;
+    transition: all 0.3s ease 0s;
+  }
 }
-
+@media (max-width: 767.98px) {
+  input[type=submit]._form-focus {
+    background-color: #182949;
+    color: white;
+    transition: all 0.3s ease 0s;
+  }
+}
 .menu__item_logo .logo {
   display: flex;
   align-items: center;
