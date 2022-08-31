@@ -1868,20 +1868,27 @@ body::after {
   border: 1px solid transparent;
   /* padding вокруг плашки */
 }
-.options_yoga .option_yoga:hover {
-  transition: all 0.3s ease 0s;
+@media (min-width: 767.98px) {
+  .options_yoga .option_yoga:hover {
+    transition: all 0.3s ease 0s;
+  }
+  .options_yoga .option_yoga:hover .option_yoga_img {
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .options_yoga .option_yoga:hover .option_yoga_tt .option_yoga_title::after {
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+  }
+  .options_yoga .option_yoga:hover .option_yoga_tt .option_yoga_text {
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+  }
 }
-.options_yoga .option_yoga:hover .option_yoga_img {
-  opacity: 0;
-  transition: all 0.3s ease 0s;
-}
-.options_yoga .option_yoga:hover .option_yoga_tt .option_yoga_title::after {
-  opacity: 1;
-  transition: all 0.3s ease 0s;
-}
-.options_yoga .option_yoga:hover .option_yoga_tt .option_yoga_text {
-  opacity: 1;
-  transition: all 0.3s ease 0s;
+@media (max-width: 1000px) {
+  .options_yoga {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media (max-width: 767.98px) {
