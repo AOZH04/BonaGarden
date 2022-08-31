@@ -1752,34 +1752,34 @@ body::after {
   height: 100%;
   z-index: 2;
 }
-@supports (padding: clamp( 0.9375rem , 0.7247340426rem  +  1.0638297872vw , 2.1875rem )) {
+@supports (padding: clamp( 0.625rem , 0.4122340426rem  +  1.0638297872vw , 1.875rem )) {
   .options_yoga .option_yoga .option_yoga_tt {
-    padding: clamp( 0.9375rem , 0.7247340426rem  +  1.0638297872vw , 2.1875rem );
+    padding: clamp( 0.625rem , 0.4122340426rem  +  1.0638297872vw , 1.875rem );
   }
 }
-@supports not (padding: clamp( 0.9375rem , 0.7247340426rem  +  1.0638297872vw , 2.1875rem )) {
+@supports not (padding: clamp( 0.625rem , 0.4122340426rem  +  1.0638297872vw , 1.875rem )) {
   .options_yoga .option_yoga .option_yoga_tt {
-    padding: calc(0.9375rem + 1.25 * (100vw - 20rem) / 117.5);
+    padding: calc(0.625rem + 1.25 * (100vw - 20rem) / 117.5);
   }
 }
 .options_yoga .option_yoga .option_yoga_tt .option_yoga_title {
   font-family: "Gilroy";
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1;
   color: white;
   z-index: 5;
   margin-bottom: 5px;
-  padding-right: 30px;
+  padding-right: 20px;
   position: relative;
 }
-@supports (font-size: clamp( 1.25rem , 1.1436170213rem  +  0.5319148936vw , 1.875rem )) {
+@supports (font-size: clamp( 1.25rem , 1.1968085106rem  +  0.2659574468vw , 1.5625rem )) {
   .options_yoga .option_yoga .option_yoga_tt .option_yoga_title {
-    font-size: clamp( 1.25rem , 1.1436170213rem  +  0.5319148936vw , 1.875rem );
+    font-size: clamp( 1.25rem , 1.1968085106rem  +  0.2659574468vw , 1.5625rem );
   }
 }
-@supports not (font-size: clamp( 1.25rem , 1.1436170213rem  +  0.5319148936vw , 1.875rem )) {
+@supports not (font-size: clamp( 1.25rem , 1.1968085106rem  +  0.2659574468vw , 1.5625rem )) {
   .options_yoga .option_yoga .option_yoga_tt .option_yoga_title {
-    font-size: calc(1.25rem + 0.625 * (100vw - 20rem) / 117.5);
+    font-size: calc(1.25rem + 0.3125 * (100vw - 20rem) / 117.5);
   }
 }
 .options_yoga .option_yoga .option_yoga_tt .option_yoga_title::after {
