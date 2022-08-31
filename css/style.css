@@ -2386,18 +2386,20 @@ body::after {
   width: 100%;
   height: 100%;
 }
-.rates_block .rates .rate:hover {
-  background-color: #e6be80;
-  transition: all 0.3s ease 0s;
-}
-.rates_block .rates .rate:hover .rate_text {
-  transition: all 0.3s ease 0s;
-}
-.rates_block .rates .rate:hover .rate_btn {
-  background: #182949;
-  color: white;
-  transition: all 0.3s ease 0s;
-  border: 2px solid transparent;
+@media (min-width: 767.98px) {
+  .rates_block .rates .rate:hover {
+    background-color: #e6be80;
+    transition: all 0.3s ease 0s;
+  }
+  .rates_block .rates .rate:hover .rate_text {
+    transition: all 0.3s ease 0s;
+  }
+  .rates_block .rates .rate:hover .rate_btn {
+    background: #182949;
+    color: white;
+    transition: all 0.3s ease 0s;
+    border: 2px solid transparent;
+  }
 }
 @media (max-width: 1170px) {
   .rates_block .rates {
@@ -2426,6 +2428,7 @@ body::after {
   .rates_block .rates .rate .rate_bottom {
     flex: 0 1 0px;
     height: 0px;
+    transition: all 0.3s ease 0s;
   }
   .rates_block .rates .rate .rate_bottom .rate_price {
     position: absolute;
@@ -2450,6 +2453,7 @@ body::after {
   .rates_block .rates.active .rate.active .rate_bottom {
     flex: 1 1 auto;
     height: auto;
+    transition: all 0.3s ease 0s;
   }
   .rates_block .rates.active .rate.active .rate_bottom .rate_price {
     position: static;
