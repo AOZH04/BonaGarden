@@ -7653,8 +7653,8 @@
         }));
     }
     let qCoaches = document.querySelector(".quantitycoashes");
-    let qSlides = document.querySelectorAll(".coaches__slide").length;
-    if (qCoaches) qCoaches.innerText = qSlides;
+    let qSlides = document.querySelectorAll(".coaches__slide");
+    if (qCoaches) qCoaches.innerText = qSlides.length;
     if (window.screen.width <= 767) {
         document.querySelector(".grids");
         let optionYogas = document.querySelectorAll(".grid");
@@ -7669,18 +7669,6 @@
             }));
         }));
     }
-    (function() {
-        function scrollHorizontally(e) {
-            e = window.event || e;
-            var delta = Math.max(-1, Math.min(1, e.wheelDelta || -e.detail));
-            document.querySelector(".schedule_table").scrollLeft -= 40 * delta;
-            e.preventDefault();
-        }
-        if (document.querySelector(".schedule_table").addEventListener) {
-            document.querySelector(".schedule_table").addEventListener("mousewheel", scrollHorizontally, false);
-            document.querySelector(".schedule_table").addEventListener("DOMMouseScroll", scrollHorizontally, false);
-        } else document.querySelector(".schedule_table").attachEvent("onmousewheel", scrollHorizontally);
-    })();
     let btnLevels = document.querySelectorAll(".level_content_btn");
     if (btnLevels) btnLevels.forEach((btnLevel => {
         if (btnLevel) btnLevel.onclick = function() {
